@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/Styling.css">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        .tnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .tnav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tnav ul li {
+            margin-right: 20px;
+        }
+
+        .tnav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .tnav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: #e73c92;
+            padding: 10px 0;
+        }
+
+        #h {
+            text-align: center;
+            color: #1abc9c;
+            margin-top: 30px;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            color: #8e44ad;
+        }
+
+        /* Paragraph */
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        #p1 {
+            font-weight: bold;
+        }
+
+        /* Image */
+        img {
+            display: block;
+            max-width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Flexbox for Brief Introduction */
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 20px;
+        }
+
+        .intro-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .intro-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Work Section */
+        h2#h {
+            text-align: center;
+            color: #1abc9c;
+            margin-top: 30px;
+        }
+
+        /* Table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f9f9f9;
+        }
+
+        /* Form */
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="textarea"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"],
+        input[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input[type="button"]:hover,
+        input[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+
+        .gender-radio {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .gender-radio input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .gender-radio label {
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .gender-radio p {
+            font-weight: bold;
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+
+        .custom-audio {
+            align-items: center;
+            width: 100%;
+            /* Full width of container */
+            max-width: 500px;
+            /* Max width */
+            margin: 20px auto;
+            /* Center the player */
+            border-radius: 8px;
+            /* Rounded corners */
+            background-color: #f4f4f4;
+            /* Light background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        /* Video */
+        video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        li a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="tnav">
+        <ul>
+            <li><a href="#default" target="_blank">Home</a></li>
+            <li><a href="#about" target="_blank">About</a></li>
+            <li><a href="#contact" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Brief Introduction -->
+    <h1 id="default">BRIEF INTRODUCTION</h1>
+    <div class="intro-container">
+        <div class="intro-text">
+            <p id="p1">Myself <strong>SOMYA MISHRA</strong>, currently pursuing Bachelors of Technology in computer
+                science with specialisation of <I>Artificial Intelligence</I>, at KIET Group Of Institutions, Ghaziabad
+                I hail from Prayagraj,a city renowned for its culture,sprituality and history.where river Ganga ,yamuna
+                and mystical sarwaswati meet.i displayed a consistent dedication to my academic and extracurricular
+                activities.</p>
+
+        </div>
+        <div class="intro-image">
+            <img src="somya.jpeg" alt="Somya mishra" height="300px">
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <h2 id="about">Work</h2>
+    <p>As an undergraduate student pursuing a B.Tech in Computer Science with a specialization in Artificial
+        Intelligence, I bring a unique blend of technical expertise and leadership experience to every endeavor. My
+        journey began in school, where I actively participated in and contributed to various events, cultivating a
+        strong foundation in collaboration, organization, and public speaking. Serving as a school captain further honed
+        my leadership, decision-making, and team management skills, allowing me to lead by example and inspire others to
+        excel. These formative experiences have seamlessly translated into my academic and professional pursuits,
+        equipping me with the ability to balance technical rigor with interpersonal effectiveness. I am driven by a
+        passion for problem-solving and innovation, consistently seeking opportunities to apply my AI knowledge to
+        real-world challenges while fostering a positive and collaborative environment.</p>
+
+    <!-- Hobbies -->
+    <h3>Hobbies</h3>
+    <p>Reading books is more than just a hobby for me; it is an immersive experience that fuels my curiosity and
+        nurtures my soul. Some beautiful books I have came upon are :- one Indian girl ,stories we never tell, ikigai
+        etc.</p>
+    <!-- book image  -->
+    <pre><a href="https://archive.org/details/one-indian-girl/page/n15/mode/2up"><img src="one indian girl.jpg" height="200px"></a>    <a href="https://books.google.co.in/books/about/Stories_We_Never_Tell.html?id=xWScEAAAQBAJ&redir_esc=y"><img src="images.jpeg" height="200px"></a>
+</pre>
+    <p>i love to listen songs and some beautiful tracks,mainly some soothing sound,which makes me to feel relax during
+        my tough days ,some beautiful tracks i love to listen are:-</p>
+    <div source="audio player">
+        <h2>Listen to this track</h2>
+        <audio controls>
+            <source src="audio.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+
+
+
+    <!-- Top 3 Hobbies -->
+    <h2>My Top 3 Hobbies</h2>
+    <ol>
+        <li>listening music</li>
+        <li>badminton</li>
+        <li>reading books</li>
+    </ol>
+
+    <!-- Favorite Websites -->
+    <h2>Favorite Websites</h2>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube.com</a></li>
+        <li><a href="https://www.chat.openai.com" target="_blank">ChatGPT.com</a></li>
+        <li><a href="https://www.geeksforgeeks.com" target="_blank">GeeksforGeeks.com</a></li>
+    </ul>
+
+
+    <!-- Form -->
+    <h2 id="contact">Contact Me</h2>
+    <form action="#" method="post">
+        <label for="cname">Enter your Name</label>
+        <input type="text" name="first_name" id="cname" placeholder="Enter Name" required>
+
+        <label for="email">Enter Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+
+        <label for="message">Enter Message</label>
+        <textarea name="message" id="message" placeholder="Enter Message" rows="4" required></textarea>
+
+        <div class="gender-radio">
+            <p>Enter Gender:</p>
+            <input type="radio" name="gen" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gen" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gen" id="trans" value="trans">
+            <label for="trans">Other</label>
+        </div>
+
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>
